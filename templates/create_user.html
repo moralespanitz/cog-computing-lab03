@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}Crear Usuario - Gestión de Usuarios{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-header bg-success text-white">
+                <h4 class="mb-0">
+                    <i class="bi bi-plus-circle"></i> Crear Nuevo Usuario
+                </h4>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('create_user') }}">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre Completo *</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre"
+                               placeholder="Ej: Juan Pérez" required>
+                        <div class="form-text">Ingrese el nombre completo del usuario.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico *</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                               placeholder="Ej: juan.perez@example.com" required>
+                        <div class="form-text">Debe ser un correo electrónico válido y único.</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="rol" class="form-label">Rol *</label>
+                        <select class="form-select" id="rol" name="rol" required>
+                            <option value="usuario" selected>Usuario</option>
+                            <option value="admin">Admin</option>
+                        </select>
+                        <div class="form-text">Seleccione el rol del usuario en el sistema.</div>
+                    </div>
+
+                    <div class="d-flex gap-2 mt-4">
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-check-circle"></i> Crear Usuario
+                        </button>
+                        <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">
+                            <i class="bi bi-x-circle"></i> Cancelar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

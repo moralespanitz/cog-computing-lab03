@@ -1,0 +1,53 @@
+lab03/
+├── 📄 START_HERE.md                    ⭐ Begin here! Quick start guide
+├── 📄 QUICK_REFERENCE.txt              📋 All credentials and commands
+├── 📄 README.md                        📖 Complete documentation
+├── 📄 DEPLOYMENT_SUMMARY.md            📊 Deployment details
+├── 📄 TESTING.md                       🧪 Testing guide
+│
+├── 🐍 app.py                           🚀 Main Flask application
+├── 📦 pyproject.toml                   📦 UV dependencies
+├── 🐳 Dockerfile                       🐳 App container image
+├── 🐳 docker-compose.yml               🎼 Container orchestration
+├── 🔐 .env                             🔑 Environment variables
+├── 📄 .env.example                     📋 Environment template
+├── 🚫 .gitignore                       📝 Git ignore rules
+├── 🚫 .dockerignore                    📝 Docker ignore rules
+│
+├── 🗄️ database/
+│   └── init.sql                        💾 Database schema + sample data
+│
+├── 🎨 templates/
+│   ├── base.html                       🏗️ Base template with navbar
+│   ├── login.html                      🔐 Login page
+│   ├── dashboard.html                  📊 User list (READ)
+│   ├── create_user.html                ➕ Create form (CREATE)
+│   └── edit_user.html                  ✏️ Edit form (UPDATE)
+│
+├── 🧪 test_app.py                      🧪 Python test suite
+├── 🧪 manual_test.sh                   ⚡ Bash test script (executable)
+│
+└── 📁 Additional Files
+    ├── create_admin.py                 🔧 Helper script
+    └── PROJECT_STRUCTURE.txt           📁 This file
+
+═══════════════════════════════════════════════════════════════
+
+📊 File Count Summary:
+  - Application Files: 12
+  - Templates: 5
+  - Documentation: 6
+  - Configuration: 6
+  - Tests: 2
+  
+📦 Total: 31 files
+
+═══════════════════════════════════════════════════════════════
+
+🎯 Key Entry Points:
+  1. START_HERE.md          → Quickstart instructions
+  2. http://localhost:5001  → Access application
+  3. app.py                 → Main code
+  4. manual_test.sh         → Run tests
+  
+═══════════════════════════════════════════════════════════════
